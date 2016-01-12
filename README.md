@@ -20,9 +20,7 @@ In this exercise we will install Python, have a look at its usage, and write som
 
 1. Go to [this webpage](http://www-personal.umich.edu/~jlawler/wordlist.html) and download the text file containing English words.
 
-1. Read [Section 7.2. Reading and Writing Files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files) from the Python Tutorial.
-
-1. Write a script to open the text file and print the first ten lines to the terminal.
+1. Read [Section 7.2. Reading and Writing Files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files) from the Python Tutorial, and write a script to open the text file and print the first ten lines to the terminal.
 
 1. Read [Section 3.1.2. Strings](https://docs.python.org/3/tutorial/introduction.html#lists) and adapt your script to print the first ten words of length three from the file to the terminal.
 
