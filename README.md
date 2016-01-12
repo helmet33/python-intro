@@ -13,6 +13,8 @@ In this exercise we will install Python, have a look at its usage, and write som
 1. Save the following script as fib.py in whatever folder you want to keep it in. Run it at the command line.
    
     ```python
+    a, b = 0, 1
+    
     while b < 10:
       print(b)
       a, b = b, a+b
