@@ -5,7 +5,7 @@ In this exercise we will install Python, have a look at its usage, and write som
 
 ## Exercises
 
-1. Go to [python.org](www.python.org) and download the Python 3 installer for your machine, and run it.
+1. Go to [python.org](http://www.python.org) and download the Python 3 installer for your machine, and run it.
 
 1. Open [The Python Tutorial](https://docs.python.org/3/tutorial/) and have a look at section 1 "Whetting your appetite". The Python Tutorial is a great resource for learning more about Python.
 
