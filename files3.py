@@ -1,15 +1,27 @@
-f = open('wordlist.txt', 'r')
-o = open('appended3.txt', 'w')
-words = []
-i = 0
-allwords = f.readlines()
-f.close()
-for x in allwords:
-	if len(x) == 4:
-		words.append(x)
-for x in range(10):
-	a = words[x]
-	print(a.rstrip())
-	o.write(a)
-o.close()
+# Function to check if the word is an anagram
+def isAnAnagram(word, user):
+    wordAsList= list(word)
+    wordAsList.sort()
+    inputAsList= list(user)
+    inputAsList.sort()
 
+    return (wordAsList == inputAsList)
+
+with open('wordlist.txt', 'r') as f:
+	allwords = f.readlines()
+f.close()
+
+words = []
+for x in allwords:
+	x = x.rstrip()
+	words.append(x)
+
+
+inp = input("enter word:")
+lister = [word for word in words if len(word) == len(inp) ]
+for item in lister:
+	if item != inp:
+		if isAnAnagram(item, inp):
+			print(item)
+
+#print(lister)
