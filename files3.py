@@ -18,6 +18,11 @@ def getAnagrams(user):
 		if isAnAnagram(item, user):
 			yield item
 
+def bastardise(user):
+	wet = list(user)
+	wet.sort()
+	return wet
+
 # reads from files to list and closes file
 with open('wordlist.txt', 'r') as f:
 	allwords = f.readlines()
@@ -33,9 +38,8 @@ inp = 1
 # Takes input
 while inp != "99":
 	inp = input("enter word:")
-	wet = list(inp)
-	wet.sort()
-	result = getAnagrams(wet)
+	blah = bastardise(inp)
+	result = getAnagrams(blah)
 	print(list(result))
 
 # Should really check type here... but type is always a string
