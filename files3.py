@@ -8,9 +8,9 @@ words = []
 def isAnAnagram(word, user):
 	wordList= list(word)
 	wordList.sort()
-	inputList= list(user)
-	inputList.sort()
-	return (wordList == inputList)
+	#inputList= list(user)
+	#inputList.sort()
+	return (wordList == user)
 
 def getAnagrams(user):
 	lister = [word for word in words if len(word) == len(user) ]
@@ -33,7 +33,9 @@ inp = 1
 # Takes input
 while inp != "99":
 	inp = input("enter word:")
-	result = getAnagrams(inp)
+	wet = list(inp)
+	wet.sort()
+	result = getAnagrams(wet)
 	print(list(result))
 
 # Should really check type here... but type is always a string
